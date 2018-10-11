@@ -8,14 +8,14 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.get('/', function(req, res){
 	res.sendFile('views/login.html', {root: __dirname })
 });
-app.get('/exam', function(req, res){
-	res.sendFile('views/test.html', {root: __dirname })
-});
 app.get('/signup', function(req, res){
 	res.sendFile('views/signup.html', {root: __dirname })
 });
 app.get('/forgot', function(req, res){
 	res.sendFile('views/forgot.html', {root: __dirname })
+});
+app.get('/test', function(req, res){
+	res.sendFile('views/exam.html', {root: __dirname })
 });
 app.get('/admin', function(req, res){
 	res.sendFile('views/admin.html', {root: __dirname })
