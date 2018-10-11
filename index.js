@@ -1,7 +1,6 @@
 const express = require('express')
 const bodyParser = require('body-parser');
 const app = express()
-const port = 4000
 
 app.use(express.static('./views/'));
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -30,4 +29,5 @@ app.post('/auth/admin', function(req, res){
 	console.log(req.body);
 });
 
+const port = process.env.port || 4000
 app.listen(port, () => console.log(`Example app listening on port ${port}!`))
