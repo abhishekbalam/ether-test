@@ -8,7 +8,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.get('/', function(req, res){
 	res.sendFile('views/login.html', {root: __dirname })
 });
-app.get('/test', function(req, res){
+app.get('/exam', function(req, res){
 	res.sendFile('views/test.html', {root: __dirname })
 });
 app.get('/signup', function(req, res){
