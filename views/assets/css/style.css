@@ -23,6 +23,12 @@ body.style-3 {
   background: #ffffff url(../images/geometry2.png) repeat;
 }
 
+.col-md-6 .control-label{
+  font-size: 2rem;
+  line-height: 2rem;
+  padding: 0.5rem 0 0.5rem 0; 
+}
+
 a {
   color: #33cccc;
   -moz-transition: all 0.3s ease;
@@ -64,6 +70,10 @@ a:hover {
   background: #ffffff;
   border-radius: 10px;
 }
+
+.qstn{
+  padding-bottom: 30px;
+}
 .style-2 .fh5co-form {
   -webkit-box-shadow: -4px 7px 46px 2px rgba(0, 0, 0, 0.1);
   -moz-box-shadow: -4px 7px 46px 2px rgba(0, 0, 0, 0.1);
@@ -76,10 +86,12 @@ a:hover {
   }
 }
 .fh5co-form h2 {
+  /*position: relative;*/
   /*text-transform: uppercase;*/
   letter-spacing: 2px;
   font-size: 20px;
-  margin: 0 0 30px 0;
+  margin: 0px 0 30px 0;
+  
   color: #000000;
 }
 .fh5co-form .form-group {
