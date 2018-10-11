@@ -29,5 +29,5 @@ app.post('/auth/admin', function(req, res){
 	console.log(req.body);
 });
 
-const port = process.env.port || 4000
+const port = process.env.PORT || 4000
 app.listen(port, () => console.log(`Example app listening on port ${port}!`))
